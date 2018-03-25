@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="uXd-VD-cld">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="Eid-ib-frn" customClass="MenuViewController" customModule="UITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EZw-XC-UaG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jfr-Gf-mdM">
+                                <rect key="frame" x="20" y="367.5" width="280" height="180.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brd-nO-Ctq" customClass="CustomButton" customModule="UITest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="47"/>
+                                        <color key="backgroundColor" red="0.54901960780000003" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="actionHome:" destination="Eid-ib-frn" eventType="touchUpInside" id="gc5-Zv-V9a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52m-fh-72R" customClass="CustomButton" customModule="UITest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="280" height="46.5"/>
+                                        <color key="backgroundColor" red="0.54901960780000003" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Settings"/>
+                                        <connections>
+                                            <action selector="actionSettings:" destination="Eid-ib-frn" eventType="touchUpInside" id="JPW-uW-u6s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbO-9F-OCs" customClass="CustomButton" customModule="UITest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="133.5" width="280" height="47"/>
+                                        <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="actionLogout:" destination="Eid-ib-frn" eventType="touchUpInside" id="ea2-T8-0O9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Fnp-S4-dXi"/>
+                                    <constraint firstItem="CbO-9F-OCs" firstAttribute="height" secondItem="52m-fh-72R" secondAttribute="height" id="R7w-VX-gUe"/>
+                                    <constraint firstItem="52m-fh-72R" firstAttribute="height" secondItem="brd-nO-Ctq" secondAttribute="height" id="a2t-Pu-gih"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="djS-j2-l22">
+                                <rect key="frame" x="103.5" y="90" width="114" height="114"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wV9-O1-dEO" firstAttribute="bottom" secondItem="Jfr-Gf-mdM" secondAttribute="bottom" constant="20" id="4vi-mF-rfj"/>
+                            <constraint firstItem="djS-j2-l22" firstAttribute="width" secondItem="djS-j2-l22" secondAttribute="height" multiplier="1:1" id="6Ue-7x-WyG"/>
+                            <constraint firstItem="djS-j2-l22" firstAttribute="centerY" secondItem="wV9-O1-dEO" secondAttribute="centerY" multiplier="0.5" id="9Zc-k4-QSI"/>
+                            <constraint firstItem="djS-j2-l22" firstAttribute="height" secondItem="EZw-XC-UaG" secondAttribute="height" multiplier="0.2" id="UHM-8q-s0O"/>
+                            <constraint firstItem="Jfr-Gf-mdM" firstAttribute="leading" secondItem="wV9-O1-dEO" secondAttribute="leading" constant="20" id="XJS-qL-PeT"/>
+                            <constraint firstItem="djS-j2-l22" firstAttribute="centerX" secondItem="Jfr-Gf-mdM" secondAttribute="centerX" id="YHe-Qw-z5C"/>
+                            <constraint firstItem="brd-nO-Ctq" firstAttribute="height" secondItem="EZw-XC-UaG" secondAttribute="height" multiplier="110/1334" id="mcz-34-UKl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wV9-O1-dEO"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonsOriginConstraint" destination="XJS-qL-PeT" id="YCr-Ez-QUS"/>
+                        <outlet property="buttonsWidthConstraint" destination="Fnp-S4-dXi" id="oD5-bD-jxH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6M-Dj-KE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-619"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="16" height="16"/>
+    </resources>
+</document>

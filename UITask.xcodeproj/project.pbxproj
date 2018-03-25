@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C64BC4152D6D328787DC01C /* Pods_UITask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAB5FD0AF9C83F231D153D9 /* Pods_UITask.framework */; };
+		F712EDF120665E1C007E24FF /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDF020665E1C007E24FF /* UINavigationController+.swift */; };
+		F712EDF3206661E2007E24FF /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDF2206661E2007E24FF /* UIWindow+.swift */; };
+		F712EDF520666AD9007E24FF /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDF420666AD9007E24FF /* StartPresenter.swift */; };
+		F712EDF720666BD9007E24FF /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDF620666BD9007E24FF /* StartRouter.swift */; };
+		F712EDF920666CEE007E24FF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDF820666CEE007E24FF /* LoginRouter.swift */; };
+		F712EDFB20666E16007E24FF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDFA20666E16007E24FF /* HomeRouter.swift */; };
+		F712EDFD20666FBF007E24FF /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDFC20666FBF007E24FF /* SettingsRouter.swift */; };
+		F712EDFF206671EB007E24FF /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EDFE206671EB007E24FF /* CustomTabBarController.swift */; };
+		F712EE0120667351007E24FF /* DateCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE0020667351007E24FF /* DateCellViewData.swift */; };
+		F712EE03206676DF007E24FF /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE02206676DF007E24FF /* DateCell.swift */; };
+		F712EE0520668513007E24FF /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE0420668513007E24FF /* TaskCell.swift */; };
+		F712EE0720668536007E24FF /* TaskCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE0620668536007E24FF /* TaskCellViewData.swift */; };
+		F712EE092066D2D9007E24FF /* SettingsInputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE082066D2D9007E24FF /* SettingsInputTableViewController.swift */; };
+		F712EE0B2066D5BC007E24FF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE0A2066D5BC007E24FF /* RoundButton.swift */; };
+		F712EE0D2066D9F6007E24FF /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE0C2066D9F6007E24FF /* RoundImageView.swift */; };
+		F712EE0F2066DFFC007E24FF /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712EE0E2066DFFC007E24FF /* ImageCell.swift */; };
+		F73F5BAB20671BC8008CB698 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73F5BAA20671BC8008CB698 /* UICollectionView+.swift */; };
+		F7AE18B82066515700E097A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18B72066515700E097A7 /* AppDelegate.swift */; };
+		F7AE18BF2066515700E097A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18BE2066515700E097A7 /* Assets.xcassets */; };
+		F7AE18C22066515700E097A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18C02066515700E097A7 /* LaunchScreen.storyboard */; };
+		F7AE18CF2066521300E097A7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18CE2066521300E097A7 /* StartViewController.swift */; };
+		F7AE18D12066522300E097A7 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18D02066522300E097A7 /* Start.storyboard */; };
+		F7AE18D3206652B900E097A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18D2206652B900E097A7 /* LoginViewController.swift */; };
+		F7AE18D5206652C300E097A7 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18D4206652C300E097A7 /* LoginPresenter.swift */; };
+		F7AE18D7206652DF00E097A7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18D6206652DF00E097A7 /* Login.storyboard */; };
+		F7AE18D92066532100E097A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18D82066532100E097A7 /* HomeViewController.swift */; };
+		F7AE18DB2066532D00E097A7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18DA2066532D00E097A7 /* HomePresenter.swift */; };
+		F7AE18DD2066533800E097A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18DC2066533800E097A7 /* Home.storyboard */; };
+		F7AE18DF2066534A00E097A7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18DE2066534A00E097A7 /* MenuViewController.swift */; };
+		F7AE18E12066535900E097A7 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18E02066535900E097A7 /* Menu.storyboard */; };
+		F7AE18E32066537800E097A7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18E22066537800E097A7 /* SettingsViewController.swift */; };
+		F7AE18E52066538400E097A7 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18E42066538400E097A7 /* SettingsPresenter.swift */; };
+		F7AE18E72066539400E097A7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AE18E62066539400E097A7 /* Settings.storyboard */; };
+		F7AE18EC2066540100E097A7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18EA2066540100E097A7 /* SWRevealViewController.m */; };
+		F7AE18EE2066549600E097A7 /* LoginInputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18ED2066549600E097A7 /* LoginInputTableViewController.swift */; };
+		F7AE18F32066550300E097A7 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18F22066550300E097A7 /* UITextField+.swift */; };
+		F7AE18F52066552E00E097A7 /* ExclusiveTouchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18F42066552E00E097A7 /* ExclusiveTouchButton.swift */; };
+		F7AE18F72066553B00E097A7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18F62066553B00E097A7 /* CustomButton.swift */; };
+		F7AE18F92066558900E097A7 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18F82066558900E097A7 /* CustomNavigationController.swift */; };
+		F7AE18FB206655B900E097A7 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE18FA206655B900E097A7 /* CustomSegmentedControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8307B52BC7427A6571B52100 /* Pods-UITask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITask.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITask/Pods-UITask.release.xcconfig"; sourceTree = "<group>"; };
+		9FB5806AC7D171E9A92706A3 /* Pods-UITask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITask/Pods-UITask.debug.xcconfig"; sourceTree = "<group>"; };
+		BEAB5FD0AF9C83F231D153D9 /* Pods_UITask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F712EDF020665E1C007E24FF /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		F712EDF2206661E2007E24FF /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
+		F712EDF420666AD9007E24FF /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		F712EDF620666BD9007E24FF /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		F712EDF820666CEE007E24FF /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		F712EDFA20666E16007E24FF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		F712EDFC20666FBF007E24FF /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		F712EDFE206671EB007E24FF /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		F712EE0020667351007E24FF /* DateCellViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCellViewData.swift; sourceTree = "<group>"; };
+		F712EE02206676DF007E24FF /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		F712EE0420668513007E24FF /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		F712EE0620668536007E24FF /* TaskCellViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewData.swift; sourceTree = "<group>"; };
+		F712EE082066D2D9007E24FF /* SettingsInputTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInputTableViewController.swift; sourceTree = "<group>"; };
+		F712EE0A2066D5BC007E24FF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F712EE0C2066D9F6007E24FF /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		F712EE0E2066DFFC007E24FF /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		F73F5BAA20671BC8008CB698 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		F7AE18B42066515700E097A7 /* UITask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7AE18B72066515700E097A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7AE18BE2066515700E097A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7AE18C12066515700E097A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7AE18C32066515700E097A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7AE18CE2066521300E097A7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		F7AE18D02066522300E097A7 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		F7AE18D2206652B900E097A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F7AE18D4206652C300E097A7 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		F7AE18D6206652DF00E097A7 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F7AE18D82066532100E097A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F7AE18DA2066532D00E097A7 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F7AE18DC2066533800E097A7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F7AE18DE2066534A00E097A7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F7AE18E02066535900E097A7 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		F7AE18E22066537800E097A7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F7AE18E42066538400E097A7 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		F7AE18E62066539400E097A7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F7AE18E92066540000E097A7 /* UITask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITask-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7AE18EA2066540100E097A7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F7AE18EB2066540100E097A7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F7AE18ED2066549600E097A7 /* LoginInputTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputTableViewController.swift; sourceTree = "<group>"; };
+		F7AE18F22066550300E097A7 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		F7AE18F42066552E00E097A7 /* ExclusiveTouchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusiveTouchButton.swift; sourceTree = "<group>"; };
+		F7AE18F62066553B00E097A7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F7AE18F82066558900E097A7 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		F7AE18FA206655B900E097A7 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7AE18B12066515700E097A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C64BC4152D6D328787DC01C /* Pods_UITask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B02D9943E2D16201A6E8B87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FB5806AC7D171E9A92706A3 /* Pods-UITask.debug.xcconfig */,
+				8307B52BC7427A6571B52100 /* Pods-UITask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9AA01C432D9D657D89B887C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB5FD0AF9C83F231D153D9 /* Pods_UITask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7AE18AB2066515700E097A7 = {
+			isa = PBXGroup;
+			children = (
+				F7AE18B62066515700E097A7 /* UITask */,
+				F7AE18B52066515700E097A7 /* Products */,
+				5B02D9943E2D16201A6E8B87 /* Pods */,
+				B9AA01C432D9D657D89B887C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7AE18B52066515700E097A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7AE18B42066515700E097A7 /* UITask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7AE18B62066515700E097A7 /* UITask */ = {
+			isa = PBXGroup;
+			children = (
+				F7AE18CD206651F600E097A7 /* start */,
+				F7AE18CC206651EF00E097A7 /* login */,
+				F7AE18CB206651E500E097A7 /* home */,
+				F7AE18CA206651DF00E097A7 /* menu */,
+				F7AE18C9206651DB00E097A7 /* settings */,
+				F7AE18E8206653DA00E097A7 /* SWRevealViewController */,
+				F7AE18EF206654AE00E097A7 /* customUI */,
+				F7AE18B72066515700E097A7 /* AppDelegate.swift */,
+				F7AE18BE2066515700E097A7 /* Assets.xcassets */,
+				F7AE18C02066515700E097A7 /* LaunchScreen.storyboard */,
+				F7AE18C32066515700E097A7 /* Info.plist */,
+			);
+			path = UITask;
+			sourceTree = "<group>";
+		};
+		F7AE18C9206651DB00E097A7 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				F712EDFC20666FBF007E24FF /* SettingsRouter.swift */,
+				F7AE18E22066537800E097A7 /* SettingsViewController.swift */,
+				F712EE082066D2D9007E24FF /* SettingsInputTableViewController.swift */,
+				F7AE18E42066538400E097A7 /* SettingsPresenter.swift */,
+				F7AE18E62066539400E097A7 /* Settings.storyboard */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		F7AE18CA206651DF00E097A7 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				F7AE18DE2066534A00E097A7 /* MenuViewController.swift */,
+				F7AE18E02066535900E097A7 /* Menu.storyboard */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		F7AE18CB206651E500E097A7 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F712EDFA20666E16007E24FF /* HomeRouter.swift */,
+				F7AE18D82066532100E097A7 /* HomeViewController.swift */,
+				F7AE18DA2066532D00E097A7 /* HomePresenter.swift */,
+				F712EE02206676DF007E24FF /* DateCell.swift */,
+				F712EE0020667351007E24FF /* DateCellViewData.swift */,
+				F712EE0420668513007E24FF /* TaskCell.swift */,
+				F712EE0620668536007E24FF /* TaskCellViewData.swift */,
+				F7AE18DC2066533800E097A7 /* Home.storyboard */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F7AE18CC206651EF00E097A7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				F712EDF820666CEE007E24FF /* LoginRouter.swift */,
+				F7AE18D2206652B900E097A7 /* LoginViewController.swift */,
+				F7AE18ED2066549600E097A7 /* LoginInputTableViewController.swift */,
+				F7AE18D4206652C300E097A7 /* LoginPresenter.swift */,
+				F7AE18D6206652DF00E097A7 /* Login.storyboard */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		F7AE18CD206651F600E097A7 /* start */ = {
+			isa = PBXGroup;
+			children = (
+				F712EDF620666BD9007E24FF /* StartRouter.swift */,
+				F7AE18CE2066521300E097A7 /* StartViewController.swift */,
+				F712EDF420666AD9007E24FF /* StartPresenter.swift */,
+				F7AE18D02066522300E097A7 /* Start.storyboard */,
+			);
+			path = start;
+			sourceTree = "<group>";
+		};
+		F7AE18E8206653DA00E097A7 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7AE18EB2066540100E097A7 /* SWRevealViewController.h */,
+				F7AE18EA2066540100E097A7 /* SWRevealViewController.m */,
+				F7AE18E92066540000E097A7 /* UITask-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		F7AE18EF206654AE00E097A7 /* customUI */ = {
+			isa = PBXGroup;
+			children = (
+				F712EDF2206661E2007E24FF /* UIWindow+.swift */,
+				F7AE18F82066558900E097A7 /* CustomNavigationController.swift */,
+				F712EDFE206671EB007E24FF /* CustomTabBarController.swift */,
+				F712EDF020665E1C007E24FF /* UINavigationController+.swift */,
+				F7AE18F22066550300E097A7 /* UITextField+.swift */,
+				F73F5BAA20671BC8008CB698 /* UICollectionView+.swift */,
+				F7AE18F42066552E00E097A7 /* ExclusiveTouchButton.swift */,
+				F7AE18F62066553B00E097A7 /* CustomButton.swift */,
+				F712EE0A2066D5BC007E24FF /* RoundButton.swift */,
+				F712EE0C2066D9F6007E24FF /* RoundImageView.swift */,
+				F7AE18FA206655B900E097A7 /* CustomSegmentedControl.swift */,
+				F712EE0E2066DFFC007E24FF /* ImageCell.swift */,
+			);
+			path = customUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7AE18B32066515700E097A7 /* UITask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7AE18C62066515700E097A7 /* Build configuration list for PBXNativeTarget "UITask" */;
+			buildPhases = (
+				ADDFC5E479695FBBBD197CAA /* [CP] Check Pods Manifest.lock */,
+				F7AE18B02066515700E097A7 /* Sources */,
+				F7AE18B12066515700E097A7 /* Frameworks */,
+				F7AE18B22066515700E097A7 /* Resources */,
+				36221E65C5A8C2BBAEF5E6DA /* [CP] Embed Pods Frameworks */,
+				EF9ADAF21DF8D9178105B8C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UITask;
+			productName = UITask;
+			productReference = F7AE18B42066515700E097A7 /* UITask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7AE18AC2066515700E097A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Somebody Someone";
+				TargetAttributes = {
+					F7AE18B32066515700E097A7 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F7AE18AF2066515700E097A7 /* Build configuration list for PBXProject "UITask" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7AE18AB2066515700E097A7;
+			productRefGroup = F7AE18B52066515700E097A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7AE18B32066515700E097A7 /* UITask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7AE18B22066515700E097A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AE18D7206652DF00E097A7 /* Login.storyboard in Resources */,
+				F7AE18DD2066533800E097A7 /* Home.storyboard in Resources */,
+				F7AE18C22066515700E097A7 /* LaunchScreen.storyboard in Resources */,
+				F7AE18E12066535900E097A7 /* Menu.storyboard in Resources */,
+				F7AE18BF2066515700E097A7 /* Assets.xcassets in Resources */,
+				F7AE18D12066522300E097A7 /* Start.storyboard in Resources */,
+				F7AE18E72066539400E097A7 /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36221E65C5A8C2BBAEF5E6DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UITask/Pods-UITask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TKSubmitTransition/TKSubmitTransition.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKSubmitTransition.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITask/Pods-UITask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADDFC5E479695FBBBD197CAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9ADAF21DF8D9178105B8C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITask/Pods-UITask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7AE18B02066515700E097A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F712EE0B2066D5BC007E24FF /* RoundButton.swift in Sources */,
+				F7AE18D92066532100E097A7 /* HomeViewController.swift in Sources */,
+				F712EE0F2066DFFC007E24FF /* ImageCell.swift in Sources */,
+				F712EDF520666AD9007E24FF /* StartPresenter.swift in Sources */,
+				F712EE0120667351007E24FF /* DateCellViewData.swift in Sources */,
+				F712EE0520668513007E24FF /* TaskCell.swift in Sources */,
+				F7AE18F32066550300E097A7 /* UITextField+.swift in Sources */,
+				F712EE092066D2D9007E24FF /* SettingsInputTableViewController.swift in Sources */,
+				F712EE03206676DF007E24FF /* DateCell.swift in Sources */,
+				F7AE18D5206652C300E097A7 /* LoginPresenter.swift in Sources */,
+				F7AE18D3206652B900E097A7 /* LoginViewController.swift in Sources */,
+				F712EE0720668536007E24FF /* TaskCellViewData.swift in Sources */,
+				F7AE18F92066558900E097A7 /* CustomNavigationController.swift in Sources */,
+				F73F5BAB20671BC8008CB698 /* UICollectionView+.swift in Sources */,
+				F7AE18DF2066534A00E097A7 /* MenuViewController.swift in Sources */,
+				F712EDF920666CEE007E24FF /* LoginRouter.swift in Sources */,
+				F712EDFD20666FBF007E24FF /* SettingsRouter.swift in Sources */,
+				F7AE18DB2066532D00E097A7 /* HomePresenter.swift in Sources */,
+				F7AE18EE2066549600E097A7 /* LoginInputTableViewController.swift in Sources */,
+				F712EDFF206671EB007E24FF /* CustomTabBarController.swift in Sources */,
+				F712EDFB20666E16007E24FF /* HomeRouter.swift in Sources */,
+				F7AE18FB206655B900E097A7 /* CustomSegmentedControl.swift in Sources */,
+				F712EE0D2066D9F6007E24FF /* RoundImageView.swift in Sources */,
+				F7AE18F52066552E00E097A7 /* ExclusiveTouchButton.swift in Sources */,
+				F712EDF120665E1C007E24FF /* UINavigationController+.swift in Sources */,
+				F7AE18E52066538400E097A7 /* SettingsPresenter.swift in Sources */,
+				F7AE18B82066515700E097A7 /* AppDelegate.swift in Sources */,
+				F712EDF3206661E2007E24FF /* UIWindow+.swift in Sources */,
+				F712EDF720666BD9007E24FF /* StartRouter.swift in Sources */,
+				F7AE18EC2066540100E097A7 /* SWRevealViewController.m in Sources */,
+				F7AE18CF2066521300E097A7 /* StartViewController.swift in Sources */,
+				F7AE18E32066537800E097A7 /* SettingsViewController.swift in Sources */,
+				F7AE18F72066553B00E097A7 /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7AE18C02066515700E097A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7AE18C12066515700E097A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7AE18C42066515700E097A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7AE18C52066515700E097A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7AE18C72066515700E097A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB5806AC7D171E9A92706A3 /* Pods-UITask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73S6LMU64Z;
+				INFOPLIST_FILE = UITask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.UITask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITask/SWRevealViewController/UITask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7AE18C82066515700E097A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8307B52BC7427A6571B52100 /* Pods-UITask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73S6LMU64Z;
+				INFOPLIST_FILE = UITask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.UITask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITask/SWRevealViewController/UITask-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7AE18AF2066515700E097A7 /* Build configuration list for PBXProject "UITask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7AE18C42066515700E097A7 /* Debug */,
+				F7AE18C52066515700E097A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7AE18C62066515700E097A7 /* Build configuration list for PBXNativeTarget "UITask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7AE18C72066515700E097A7 /* Debug */,
+				F7AE18C82066515700E097A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7AE18AC2066515700E097A7 /* Project object */;
+}

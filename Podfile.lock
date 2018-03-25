@@ -1,0 +1,22 @@
+PODS:
+  - TKSubmitTransition (2.0)
+
+DEPENDENCIES:
+  - TKSubmitTransition (from `https://github.com/entotsu/TKSubmitTransition.git`, branch `swift4`)
+
+EXTERNAL SOURCES:
+  TKSubmitTransition:
+    :branch: swift4
+    :git: https://github.com/entotsu/TKSubmitTransition.git
+
+CHECKOUT OPTIONS:
+  TKSubmitTransition:
+    :commit: 29fac6072451a4def5cde567075bfc62a728bb1f
+    :git: https://github.com/entotsu/TKSubmitTransition.git
+
+SPEC CHECKSUMS:
+  TKSubmitTransition: 647b907508da58ba864141e3c4382442ec536d40
+
+PODFILE CHECKSUM: 7b097bab5f398f26e89d7e9fd95d3aba076c6f4f
+
+COCOAPODS: 1.4.0
